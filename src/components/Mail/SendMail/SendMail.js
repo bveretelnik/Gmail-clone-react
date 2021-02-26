@@ -1,5 +1,5 @@
 import React from "react";
-import ".SendMail.css";
+import "/SendMail.css";
 import CloseIcon from "@material-ui/icons/Close";
 import { Button } from "@material-ui/core";
 
