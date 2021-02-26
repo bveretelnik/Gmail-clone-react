@@ -23,7 +23,7 @@ function Header() {
       <div className="header__middle">
         <SearchIcon />
         <input placeholder="Search mail" type="text" />
-        <ArrowDropDownIcon lassName="header__inputCaret" />
+        <ArrowDropDownIcon className="header__inputCaret" />
       </div>
       <div className="header__right">
         <IconButton>

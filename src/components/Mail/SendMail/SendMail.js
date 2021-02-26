@@ -1,5 +1,5 @@
 import React from "react";
-import "/SendMail.css";
+import "./SendMail.css";
 import CloseIcon from "@material-ui/icons/Close";
 import { Button } from "@material-ui/core";
 
@@ -10,12 +10,25 @@ function SendMail() {
         <h3>New Message</h3>
         <CloseIcon className="sendMail__close" />
       </div>
+
       <form>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+        <input placeholder="To" type="text" />
+        <input placeholder="Subject" type="text" />
+        <input
+          placeholder="Message..."
+          type="text"
+          className="sendMail__message"
+        />
+
         <div className="sendMail__option">
-          <Button>Send</Button>
+          <Button
+            className="sendMail__send"
+            variant="contained"
+            color="primary"
+            type="submit"
+          >
+            Send
+          </Button>
         </div>
       </form>
     </div>
